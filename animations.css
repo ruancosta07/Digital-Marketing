@@ -1,0 +1,154 @@
+@keyframes nav-mobile {
+    0% {
+        transform: translate(-400px);
+        transition: .4s;
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0px);
+        opacity: 1;
+        transition: .4s;
+
+    }
+}
+
+@keyframes display {
+    0% {
+        display: flex;
+    }
+
+    100% {
+        display: flex;
+    }
+}
+
+.main-img img {
+    animation: mainImg 1.5s ease;
+}
+
+@keyframes mainImg {
+    0% {
+        transform: translate(100%, 30%);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translate(0%, 0%);
+        opacity: 1;
+    }
+}
+
+.nav-mobile-animation {
+    transform: translateX(0%);
+    opacity: 1;
+    transition: .8s;
+}
+
+
+.filter {
+    filter: opacity(0.3);
+    transition: 1s;
+}
+
+
+
+[data-anime="grow"] {
+    transform: scale(1.1);
+    opacity: 0;
+    transition: .4s;
+}
+
+[data-anime].animate {
+    opacity: 1;
+    transform: scale(1);
+
+}
+
+@media (min-width:1024px) {
+    .main-text input{
+        font-size: 1.3em;
+    }
+    .main-text .main-button{
+        font-size: 1.3em;
+    }
+
+    .process-card:hover {
+        transform: scale(1.04);
+    }
+
+    .process-card-animate2 {
+        filter: opacity(.6);
+    }
+    .process-title{
+        font-size: 1.3em;
+    }
+    .process-title p{
+        padding: 0px 10px;
+    }
+
+    .process-img img{
+        height: 100%;
+        width: 80%;
+    }
+    .work-card > img{
+        height: 50%;
+        width: 70%;
+    }
+
+}
+
+
+@keyframes moving {
+    0% {
+        transform: translateY(-50px);
+    }
+
+    100% {
+        transform: translateY(0px);
+    }
+}
+@media (max-width:1023px){
+    .grow {
+        transform: scale(1.05);
+        transition: .5s;
+    }
+    .bg-dark{
+        opacity: .7;
+    }
+}
+
+@media (min-width: 1024px){
+    .grow2{
+        transform: scale(1.05);
+        transition: .5s;
+    }
+    .bg-dark2{
+        opacity: .7;
+    }
+    .header-nav a:hover{
+        color: hsla(273, 100%, 75%, 1);
+        transition: .5s;
+    }
+    footer div a:hover{
+        color: hsla(273, 100%, 65%, .7);
+        transition: .5s;
+    }
+
+}
+
+
+
+.rotate{
+    transform: rotate(-90deg);
+    transition: .7s;
+}
+
+footer div a:active{
+    color: hsla(273, 100%, 55%, 1);
+    transition: .5s;
+}
+
+button:active{
+    transform:scale(.9);
+}
